@@ -1,0 +1,85 @@
+/* 1. IMPORTAÇÕES E VARIÁVEIS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+/* 2. BASE (ESTILOS GERAIS) */
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 3. TIPOGRAFIA */
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 60pt;
+    color: #3842af;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+.destaque {
+    background-color: aqua;
+}
+
+.italiclegal {
+    font-style: italic;
+}
+
+/* 4. NAVEGAÇÃO E LINKS */
+nav {
+    margin: 10px 30px 30px 30px; /* Topo, Direita, Baixo, Esquerda */
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* 5. TABELAS (NOVA ESTILIZAÇÃO) */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Evita bordas duplas */
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* 6. COMPONENTES (BOTÕES/FORMULÁRIOS) */
+button {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+img {
+    margin: 20px 30px 50px 700px;
+    max-width: max-content;
+}
+

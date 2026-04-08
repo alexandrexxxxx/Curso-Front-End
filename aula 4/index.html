@@ -1,100 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InovaWeb</title>
-
-<!--[if gte mso 9]><xml>
-<mso:CustomDocumentProperties>
-<mso:_ApprovalStatus msdt:dt="string">0</mso:_ApprovalStatus>
-<mso:_ApprovalAssignedTo msdt:dt="string"></mso:_ApprovalAssignedTo>
-<mso:_ApprovalRespondedBy msdt:dt="string"></mso:_ApprovalRespondedBy>
-</mso:CustomDocumentProperties>
-</xml><![endif]-->
+    <link rel="stylesheet" href="css/style2.css" />
+    <title>InovaWeb | Soluções Tecnológicas</title>
 </head>
 <body>
-    <!-- <h1> é o título, <h2> subtitulo, <p> parágrafo, e <hr> linha, contendo o noshade no meio-->
-        <!--existe varios tipos de h1, que vai até o 8-->
-        <!--o comando de img é "<img src="-->
-        <!--o comando alt serve para acessibilidade, especificamente para pessoas cegas-->
-        <!--width é o comando da largura-->
-        <!--ul é a tag para lista não ordenada-->
-        <!--li é a tag para item de lista-->
-        <!--ol é a tag para lista ordenada, como 1234 etc-->
-        <!--table é a tag para tabela, tr é a tag para linha, td é a tag para coluna, e th é a tag para título da coluna-->
-        <!--caption é a tag para título da tabela-->
-        <!--border é o comando para borda da tabela, e o valor 1 é a espessura da borda-->
-        <!--thead é a tag para o cabeçalho da tabela-->
-        <!--form é a tag para formulário, action é o comando para o destino do formulário,
-         e method é o comando para o método de envio do formulário-->
-         <!-- label é a tag para rótulo, for é o comando para associar o rótulo ao campo de entrada,
-          input é a tag para campo de entrada, type é o comando para o tipo de campo de entrada,
-           e required é o comando para tornar o campo obrigatório-->
-           <!-- textarea é a tag para campo de texto, maxlength é o comando para limitar o número de caracteres,
-            rows é o comando para definir o número de linhas, e cols é o comando para definir o número de colunas-->
-         
-
-    <h1>InovaWeb</h1>
-    <h2>A sua solução tecnológica perfeita</h2>
-    <p>Criamos sites modernos, responsivos e inovadores para sua empresa se destacar no mercado digital</p>
-    <hr noshade>
-    <img src="./img.webp" alt="banner do site" width="300">
-    <h3>Lista de Serviços</h3>
-    <ul>
-        <li>Desenvolvimento de Sites</li>
-        <li>Loja Virtual</li>
-        <li>Otimização para Motores de Busca (SEO)</li>
-        <li>Hospedagem e Suporte Técnico</li>
-        <li>Desenvolvimento de Aplicativos</li>
-        <li>Integração de E-commerce</li>
-    </ul>
-    <table border="1">
-        <caption>Serviços e Preços</caption>
-        <thead>
-        <tr>
-            <th>Serviço</th>
-            <th>Descrição</th>
-            <th>Preço</th>
-            <th>prazo</th>
-        </tr>
-        </thead>
-        <tr>
-            <td>Desenvolvimento de Sites</td>
-            <td>Criação de sites personalizados e responsivos para sua empresa.</td>
-            <td>R$ 2.000,00</td>
-            <td>30 dias</td>
-        </tr>
-        <tr>
-            <td>Loja Virtual</td>
-            <td>Desenvolvimento de lojas virtuais completas para vender seus produtos online.</td>
-            <td>R$ 3.500,00</td>
-            <td>45 dias</td>
-        </tr>
-        <tr>
-            <td>Otimização para Motores de Busca (SEO)</td>
-            <td>Melhoria do posicionamento do seu site nos resultados de busca.</td>
-            <td>R$ 1.000,00</td>
-            <td>15 dias</td>
-        </tr> 
-    </table>
-    <br> 
-    <br>
-    <hr noshade>
-    <h3>Formulário de Contato</h3>
-    <form action="enviar.php" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="mensagem">Mensagem:</label><br>
-        <textarea id="mensagem" maxlength="30" name="mensagem" rows="4" cols="50" required></textarea><br><br>
-        <input type="submit" value="Enviar">
-        </form>
-
     
-        
+    <header>    
+        <h1>InovaWeb</h1>
+        <h2 class="destaque italiclegal">A sua solução tecnológica perfeita</h2>
+        <p>Criamos sites modernos, responsivos e inovadores para sua empresa se destacar no mercado digital</p>
 
-    
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/" target="_blank">GOOGLE</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav> 
+    </header>
+
+    <main>
+        <figure>
+            <img src="./img.webp" alt="Banner promocional da InovaWeb apresentando soluções digitais" width="400">
+        </figure>
+
+        <section id="servicos">
+            <h3>Lista de Serviços</h3>
+            <ul>
+                <li>Desenvolvimento de Sites</li>
+                <li>Loja Virtual</li>
+                <li>Otimização para Motores de Busca (SEO)</li>
+                <li>Hospedagem e Suporte Técnico</li>
+                <li>Desenvolvimento de Aplicativos</li>
+                <li>Integração de E-commerce</li>
+            </ul>
+
+            <table border="1">
+                <caption>Tabela comparativa de preços e prazos</caption>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Prazo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desenvolvimento de Sites</td>
+                        <td>Criação de sites personalizados e responsivos.</td>
+                        <td>R$ 2.000,00</td>
+                        <td>30 dias</td>
+                    </tr>
+                    <tr>
+                        <td>Loja Virtual</td>
+                        <td>Desenvolvimento de e-commerce completo.</td>
+                        <td>R$ 3.500,00</td>
+                        <td>45 dias</td>
+                    </tr>
+                    <tr>
+                        <td>SEO</td>
+                        <td>Melhoria do posicionamento nos resultados de busca.</td>
+                        <td>R$ 1.000,00</td>
+                        <td>15 dias</td>
+                    </tr> 
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contato">
+            <hr>
+            <h3>Formulário de Contato</h3>
+            <form action="enviar.php" method="post">
+                <fieldset>
+                    <legend>Envie sua mensagem</legend>
+                    
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required><br><br>
+                    
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required><br><br>
+                    
+                    <label for="mensagem">Mensagem (máx. 100 caracteres):</label><br>
+                    <textarea id="mensagem" maxlength="100" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <button type="submit">Enviar Mensagem</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 InovaWeb - Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 </html>
