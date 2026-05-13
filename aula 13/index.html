@@ -1,0 +1,96 @@
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Banco InovaWeb</title>
+</head>
+
+<body>
+  <h1>Banco InovaWeb</h1>
+
+  <div class="container">
+
+    <!-- ── Card de Saldo ──────────────────────────────────── -->
+    <div class="card">
+      <h2>Saldo disponível</h2>
+      <!-- Exibe o valor do saldo. O JS mudará a cor aqui (verde, amarelo ou vermelho) -->
+      <div id="saldo">R$ 1000.00</div>
+      
+      <p class="info-conta">
+        Conta <strong id="numero-conta">1</strong> — 
+        <!-- Onde o nome do titular aparece e será atualizado -->
+        <strong id="exibicao-titular">Alexandre</strong> &nbsp;
+        
+        <!-- Status da conta (Ativa/Bloqueada) -->
+        <span id="status-conta" class="status-ativa">Ativa</span>
+      </p>
+
+      <!-- SEÇÃO DE ATUALIZAR TITULAR -->
+      <div class="atualizar-titular-area">
+        <input type="text" id="campo-titular" placeholder="Digite o novo titular">
+        <!-- O botão que dispara a troca de nome no JavaScript -->
+        <button id="btn-atualizar-titular">Atualizar Titular</button>
+      </div>
+    </div>
+
+    <!-- ── Card de Operações ──────────────────────────────── -->
+    <div class="card">
+      <h2>Operações</h2>
+      <!-- Campo para digitar o valor do depósito ou saque -->
+      <input type="number" id="campo-valor" placeholder="Digite o valor (ex: 200.00)" min="0" step="0.01">
+
+      <div class="botoes">
+        <button id="btn-depositar">⬆ Depositar</button>
+        <button id="btn-sacar">⬇ Sacar</button>
+        <!-- Botão que limpa a lista de transações e reseta os contadores -->
+        <button id="btn-limpar">Limpar Histórico</button>
+      </div>
+
+      <!-- Local onde as mensagens de erro ou sucesso aparecem -->
+      <div id="mensagem"></div>
+
+      <!-- Botão para travar ou destravar a conta -->
+      <button id="btn-bloquear">🔒 Bloquear conta</button>
+    </div>
+
+    <!-- ── Card de Histórico ──────────────────────────────── -->
+    <div class="card">
+      <h2>Últimas transações</h2>
+      <!-- A lista <ul> começa com o aviso de 'historico-vazio' -->
+      <ul id="lista-historico">
+        <li class="historico-vazio">Nenhuma transação ainda.</li>
+      </ul>
+    </div>
+
+    <!-- ── Card de Resumo ─────────────────────────────────── -->
+    <div class="card">
+      <h2>Resumo</h2>
+      <div class="resumo-grid">
+        <div class="resumo-item">
+          <!-- Contador de depósitos feitos -->
+          <span id="total-depositos">0</span>
+          <span>Depósitos</span>
+        </div>
+        <div class="resumo-item">
+          <!-- Contador de saques feitos -->
+          <span id="total-saques">0</span>
+          <span>Saques</span>
+        </div>
+        <div class="resumo-item">
+          <!-- Soma total de todas as operações -->
+          <span id="total-transacoes">0</span>
+          <span>Total</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- O link para o seu arquivo de lógica JavaScript -->
+  <script src="exercicio.js"></script>
+
+</body>
+
+</html>
