@@ -3,7 +3,8 @@ import './App.css'
 import CartaoPerfil from './components/CartaoPerfil.jsx'
 import Header from './components/Header'
 import funcionarios from './data/funcionarios.js'
-
+import Contador from './components/ExemploUseState.jsx'
+import FormContato from './components/formContato.jsx'
 
     
 
@@ -31,8 +32,12 @@ function App() {
              )
             )}
           </div>
+          <h1>Formulário de Contato</h1>
+          <FormContato />
         </div>
+        <Contador />
       </div>
+      
     </div>
   )
 }
